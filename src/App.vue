@@ -1,20 +1,19 @@
 <template>
-  <body class="bg-red-500">
-    <div class="flex h-screen">
-      <div class="m-auto p-8 max-w-md md:max-w-2xl bg-transparent rounded">
-        <h1 class="uppercase tracking-wide">Consultora</h1>
-        <h2 class="uppercase tracking-wide">Loica</h2>
-      </div>
+  <div class="flex h-screen">
+    <div class="m-auto">
+      <figure>
+        <img src="../src/assets/logo.svg" class="h-24"/> 
+      </figure> 
     </div>
-  </body>
+  </div>
 </template>
-
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700&display=swap');
+</style>
 <script setup>
-import { defineProps, reactive } from 'vue'
-
-defineProps({
-  msg: String
-})
-
-const state = reactive({ count: 0 })
+  import { defineProps, reactive } from 'vue'
+  defineProps({
+    msg: String
+  })
+  const state = reactive({ count: 0 })
 </script>
